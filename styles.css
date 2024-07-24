@@ -61,7 +61,7 @@ nav{
     border: 1px solid rgba(255, 255, 255, 0.10);
 }
 
-.title h3{
+.title{
     color: #E6533C;
     font-size: 36px;
     font-style: italic;
@@ -341,4 +341,256 @@ button{
     width: 366px;
     height: 312px;
     border-radius: 18px;
+}
+
+.bmi-title{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.bmi-title h1{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.bmi-title p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* bmi */
+.bmi-cal{
+    width: 100%;
+    height: 487px;
+    align-self: stretch;
+    background: #222;
+}
+
+.calculator{
+    width: 73%;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    padding-top: 49px;
+    gap:60px;
+}
+
+.calculator h1{
+    width: 443px;
+    font-size: 28px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.calculator p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+}
+.chart{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    gap: 40px;
+}
+
+
+
+table{
+    margin: 0px;
+}
+th,input,select,option{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.10);;
+    border-collapse: collapse;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+  }
+  
+.cal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.cal h1{
+    margin-bottom: 14px;
+    gap: 14px;
+}
+
+form{
+    margin-top:34px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+input{
+    display: flex;
+    height: 28px;
+    padding: 12px 40px 12px 20px;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+select{
+    display: flex;
+    height: 52px;
+    padding: 12px 40px 12px 20px;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+
+#activity{
+    margin-bottom: 34px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+
+/* team member */
+
+.team{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 0 0;
+
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 0 0;
+}
+
+.col img{
+    height: 272px;
+    align-self: stretch;
+    border-radius: 18px;
+    /* position: relative; */
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat; */
+}
+
+
+.name{
+    display: flex;
+    width: 59px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+
+    /* position: absolute; */
+    left: 19px;
+    top: 212px;
+}
+
+.name h3{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.name p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+footer{
+    height: 489px;
+    align-self: stretch;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.foot{
+    width: 73%;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    padding-top: 66px;
+    gap: 152px;
+}
+
+.des{
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.des h3{
+    color: #E6533C;
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 800;
+}
+.des p{
+    align-self: stretch;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.get{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.get h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.get a{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 23px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+hr{
+    width: 73%;
+    height: 0px;
+    flex-shrink: 0;
+    stroke-width: 2px;
+    stroke: rgba(255, 255, 255, 0.10);
+    margin-top: 79px;
+}
+#right{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top:36px;
 }
