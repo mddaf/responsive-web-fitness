@@ -57,6 +57,7 @@ nav{
     padding: 4px;
     gap: 47px;
 
+
     border-radius: 39px;
     border: 1px solid rgba(255, 255, 255, 0.10);
 }
@@ -72,6 +73,7 @@ nav{
 .nav-options p{
     font-size: 18px;
     font-weight: 400;
+    cursor: pointer;
     /* line-height: 120%;  */
 }
 
@@ -80,6 +82,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     border-radius: 46px;
     background: #E6533C;
@@ -92,6 +95,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 
@@ -156,6 +160,7 @@ button{
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
+    cursor: pointer;
     /* line-height: 22px;  */
 }
 .join {
