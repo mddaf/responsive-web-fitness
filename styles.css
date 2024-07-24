@@ -9,6 +9,10 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #000;
     color: white;
     font-family: "Inter", sans-serif;
@@ -17,7 +21,14 @@ body{
     padding-bottom: 1px;
     gap: 100px;
 }
-
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
 header{
     height: 715px;
     background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
@@ -147,9 +158,10 @@ button{
     font-weight: 600;
     /* line-height: 22px;  */
 }
-.join{
+.join {
     border: none;
     background: #E6533C;
+    margin: 0;
 }
 
 
@@ -277,4 +289,56 @@ button{
     color: rgba(255, 255, 255, 0.50);
     font-size: 14px;
     font-weight: 400;
+}
+
+
+/* run */
+
+.run{
+    width: 65%;
+    display: flex;
+    padding: 30px 32px 29px 54px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 165px;
+    align-self: stretch;
+
+    border-radius: 18px;
+    background: #222;
+}
+
+
+.content{
+    display: flex;
+    width: 443px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 34px;
+}
+
+.content div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+}
+
+.content h1{
+    width: 443px; 
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.content p{
+    align-self: stretch;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.run img{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
 }
