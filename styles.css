@@ -16,8 +16,13 @@ body{
 }
 
 header{
+    height: 715px;
+    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
+}
+
+.nav-banner{
     width: 73%;
-    margin-top: 57px;
+    padding-top: 57px;
 }
 
 nav{
