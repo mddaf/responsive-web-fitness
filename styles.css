@@ -208,3 +208,73 @@ button{
     font-size: 13px;
     font-weight: 400;
 }
+
+
+/* change habbit */
+
+.habbit{
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 58px;
+}
+
+.habbit-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 14px;
+}
+
+.habbit-text h1{
+    font-size: 48px;
+    font-weight: 900;
+   
+}
+
+.habbit-text p{
+    width: 48%;
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.habbit-img{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.img-con{
+    display: flex;
+    width: 231px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.img-con img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.10);
+ 
+}
+
+.img-con h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.img-con p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+}
