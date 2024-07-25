@@ -56,7 +56,7 @@ header{
     background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
 }
 
-.nav-banner{
+.banner{
     width: 73%;
     display: grid;
     grid-template-rows: 100px 615px;
@@ -505,35 +505,7 @@ select {
     margin-bottom: 34px;
 }
 
-/* Media Queries for smaller screens */
-@media (max-width: 768px) {
 
-    .bmi-title{
-        width: 70%;
-    }
-    .bmi-title h1 {
-        font-size: 36px;
-    }
-
-    table,th,td{
-        width: 300px;
-    }
-    .bmi-title p {
-        font-size: 12px;
-    }
-    .bmi-cal{
-        padding: 0px;
-        padding-bottom: 40px;
-    }
-    .calculator {
-        grid-template-columns: 1fr;
-    }
-
-    /* .row {
-        flex-direction: column;
-    } */
-}
-/* our features */
 
 .feature-grid {
     display: grid;
@@ -591,7 +563,6 @@ select {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
     padding: 20px;
-    width: 100%;
     box-sizing: border-box;
     width: 73%;
     border-radius: 18px;
@@ -637,75 +608,73 @@ select {
     font-weight: 400;
 }
 
-footer{
-    height: 489px;
-    align-self: stretch;
+
+
+/* Footer */
+footer {
     background: rgba(255, 255, 255, 0.10);
+    padding: 40px 0;
 }
 
-.foot{
+.foot {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
     width: 73%;
-    display: flex;
-    align-items: flex-start;
-    align-content: center;
-    padding-top: 66px;
-    gap: 152px;
+    margin: 0 auto;
+    padding-top: 40px;
 }
 
-.des{
-    width: 150%;
+.des {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 20px;
 }
 
-.des h3{
+.des h3 {
     color: #E6533C;
-    font-size: 70px;
+    font-size: 36px;
     font-style: italic;
     font-weight: 800;
 }
-.des p{
-    align-self: stretch;
+
+.des p {
     color: rgba(255, 255, 255, 0.50);
     font-size: 14px;
     font-weight: 400;
 }
 
-.get{
+.get {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 20px;
 }
 
-.get h1{
-    font-size: 32px;
+.get h1 {
+    font-size: 24px;
     font-weight: 700;
 }
 
-.get a{
+.get a {
     color: rgba(255, 255, 255, 0.50);
-    font-size: 23px;
+    font-size: 16px;
     font-weight: 400;
     text-decoration: none;
 }
 
-hr{
-    width: 73%;
-    height: 0px;
-    flex-shrink: 0;
-    stroke-width: 2px;
-    stroke: rgba(255, 255, 255, 0.10);
-    margin-top: 79px;
+hr {
+    width: 80%;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    margin: 40px auto;
 }
-#right{
+
+#right {
     color: rgba(255, 255, 255, 0.50);
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
     text-align: center;
-    padding-top:36px;
+    margin-top: 20px;
 }
 
 
@@ -751,7 +720,26 @@ hr{
     }
 
 
+    .bmi-title{
+        width: 70%;
+    }
+    .bmi-title h1 {
+        font-size: 36px;
+    }
 
+    table,th,td{
+        width: 300px;
+    }
+    .bmi-title p {
+        font-size: 12px;
+    }
+    .bmi-cal{
+        padding: 0px;
+        padding-bottom: 40px;
+    }
+    .calculator {
+        grid-template-columns: 1fr;
+    }
     .feature-grid {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -768,6 +756,10 @@ hr{
     .fea-con p {
         font-size: 14px;
         text-align: center;
+    }
+
+    .team{
+        width: 90%;
     }
 }
 
