@@ -236,7 +236,7 @@ button{
 }
 
 
-/* change habbit */
+/* /* change habbit */
 
 .habbit{
     width: 73%;
@@ -271,8 +271,8 @@ button{
 }
 
 .habbit-img{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(231px, 1fr));
     gap: 40px;
 }
 
@@ -306,11 +306,14 @@ button{
 }
 
 
+
+
 /* run */
 
 .run{
     width: 65%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 30px 32px 29px 54px;
     justify-content: flex-end;
     align-items: center;
@@ -324,38 +327,40 @@ button{
 
 .content{
     display: flex;
-    width: 443px;
+    /* width: 443px; */
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 34px;
 }
 
 .content div{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 14px;
-    align-self: stretch;
+    /* align-self: stretch; */
 }
 
 .content h1{
-    width: 443px; 
+    /* width: 443px;  */
     font-size: 48px;
     font-weight: 900;
 }
 
 .content p{
-    align-self: stretch;
+    /* align-self: stretch; */
     color: rgba(255, 255, 255, 0.50);
     font-size: 14px;
     font-weight: 400;
 }
 
 .run img{
-    width: 366px;
-    height: 312px;
+    width: 100%;
+    height: auto;
     border-radius: 18px;
 }
+
+
 
 .bmi-title{
     width: 40%;
@@ -669,6 +674,45 @@ hr{
 
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
+
+    
+    .habbit-text h1 {
+        font-size: 36px;
+    }
+
+    .habbit-text p {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .img-con h3 {
+        font-size: 16px;
+    }
+
+    .img-con p {
+        font-size: 12px;
+    }
+
+    .run {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .run img {
+        width: 100%;
+        height: auto;
+    }
+
+
+
     .feature-grid {
         grid-template-columns: 1fr;
         gap: 15px;
