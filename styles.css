@@ -189,6 +189,7 @@ button{
     display: grid;
     grid-template-rows: repeat(5,1fr);
     grid-template-columns: repeat(5,1fr);
+    align-items: center;
 }
 
 
@@ -213,8 +214,22 @@ button{
     background: rgba(48, 48, 48, 0.54);
     backdrop-filter: blur(10px);
 }
+.video-tuto{
+    margin-left: 20px;
+}
 
-
+.video-tuto p{
+    margin-left: 20px;
+}
+.video-tuto i{
+    width: 27%;
+    height: 48%;
+    background: white;
+    border-radius: 50%;
+    line-height: 1em;
+    font-size: 3em;
+    margin-left: 20px;
+}
 .video-tuto span{
     color: #FFF;
     font-size: 24px;
@@ -231,13 +246,15 @@ button{
     background: rgba(255, 255, 255, 0.10);
     backdrop-filter: blur(10px);
 }
-
+.workout p{
+    margin: 10% 20px;
+}
 
 
 .workout span{
     color: #FFF;
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 900;
 }
 
 
@@ -699,7 +716,7 @@ hr {
     }
     header{
         width: 425px;
-        height: 1350px
+        height: auto;
     }
 
     nav{
@@ -732,6 +749,14 @@ hr {
     .banner-img {
         width: 100%;
         height: auto;
+    }
+
+    .video-tuto{
+        grid-area: 3/1/5/2;
+    }
+
+    .workout{
+
     }
 
 
