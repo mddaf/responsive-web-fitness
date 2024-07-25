@@ -57,27 +57,26 @@ header{
 }
 
 .banner{
-    width: 73%;
+    width: 70%;
     display: grid;
-    grid-template-rows: 100px 615px;
-    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
-    padding-top: 57px;
+    grid-template-columns: repeat(auto-fit,minmax(425px,1fr));
+    /* padding-top: 57px; */
 
 } 
 
 nav{
-    grid-area: 1/1/2/3;
-
+    width: 70%;
     display: flex;
     align-items: center;
     justify-items: center;
     justify-content: space-between;
+    margin-top: 64px;
     
 }
 
 
 .nav-options{
-    width: 73%;
+
     display: flex;
     align-items: center;
     padding: 4px;
@@ -88,12 +87,18 @@ nav{
     border: 1px solid rgba(255, 255, 255, 0.10);
 }
 
+#hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .title{
     color: #E6533C;
     font-size: 36px;
     font-style: italic;
     font-weight: 800;
-    padding-left: 52px;
+
 }
 
 .nav-options p{
@@ -129,7 +134,7 @@ nav{
 
 .banner-left{
     display: flex;
-    width: 520px;
+    /* width: px; */
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
@@ -234,6 +239,12 @@ button{
     font-size: 40px;
     font-weight: 400;
 }
+
+
+
+
+
+
 
 
 /* /* change habbit */
@@ -682,6 +693,46 @@ hr {
 
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
+
+    main{
+        gap: 50px;
+    }
+    header{
+        width: 425px;
+        height: 1350px
+    }
+
+    nav{
+        width: 87%;
+    }
+    .nav-options {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+        padding-left: 190px;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        width: 425px;
+    }
+
+    .banner-left {
+        width: 92%;
+        padding-left: 20px;
+    }
+
+    button{
+        width: 100%;
+        font-size: 15px;
+    }
+    .banner-img {
+        width: 100%;
+        height: auto;
+    }
 
 
     .habbit-text h1 {

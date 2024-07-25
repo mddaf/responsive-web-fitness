@@ -63,3 +63,46 @@
 .name{
     
 }
+
+
+
+@media (max-width: 768px) {
+
+    main{}
+    header{
+        width: 425px;
+        height: 1350px
+    }
+    .nav-options {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        width: 425px;
+    }
+
+    .banner-left {
+        width: 92%;
+        padding-left: 20px;
+    }
+
+    button{
+        width: 100%;
+        font-size: 15px;
+    }
+    .banner-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* .video-tuto, .workout {
+        width: 100%;
+        height: auto;
+    } */
+}
