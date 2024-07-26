@@ -2,21 +2,6 @@
 
 @import url('https://fonts.cdnfonts.com/css/miama');
 
-main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-}
-
-
-*{
-    width: 100%;
-    margin: 0 auto;
-}
-
 
 
 /* common style */
@@ -25,6 +10,7 @@ main{
     font-size: 58px;
     font-weight: 900;
     line-height: 120%;
+    margin: 0px;
 }
 
 .p-16px{
@@ -36,41 +22,53 @@ main{
     letter-spacing: 0.5px;
 }
 
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     background: #000;
     color: white;
     font-family: "Inter", sans-serif;
     font-style: normal;
     line-height: normal;
-    padding-bottom: 1px;
+    /* padding-bottom: 1px; */
+    /* gap: 100px; */
+}
+
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 100px;
-}
-
-header{
-    height: 715px;
-    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
-}
-
-.banner{
-    width: 70%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(425px,1fr));
-    /* padding-top: 57px; */
-
+    padding-bottom: 100px;
 } 
 
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
+    padding: 64px 0px;
+}
+
+
 nav{
-    width: 70%;
+    width: 73%;
     display: flex;
     align-items: center;
-    justify-items: center;
+    /* justify-items: center; */
     justify-content: space-between;
-    margin-top: 64px;
+    /* padding-top: 64px; */
     
 }
 
@@ -81,7 +79,7 @@ nav{
     align-items: center;
     padding: 4px;
     gap: 47px;
-
+    margin: 0px;
 
     border-radius: 39px;
     border: 1px solid rgba(255, 255, 255, 0.10);
@@ -98,6 +96,7 @@ nav{
     font-size: 36px;
     font-style: italic;
     font-weight: 800;
+    margin: 0px;
 
 }
 
@@ -130,7 +129,13 @@ nav{
 }
 
 
+.banner{
+    width: 73%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(425px,1fr));
+    /* padding-top: 57px; */
 
+} 
 
 .banner-left{
     display: flex;
@@ -153,17 +158,21 @@ nav{
 
 .btn-primary{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 14px;
+    margin: 0px;
 
 }
 
+#now{
+    display: none;
+}
 button{
     display: flex;
     width: 224px;
     padding: 16px 40px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     border-radius: 42px;
     border: 1px solid #FFF;
@@ -187,22 +196,23 @@ button{
 
 .banner-right{
     display: grid;
-    grid-template-rows: repeat(5,1fr);
-    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
 }
 
 
 .banner-img{
     width: 349px;
     height: 580px;
-    grid-area: 1/1/5/5;
+    grid-area: 1/1/4/3;
  
 }
 
 .video-tuto{
-    grid-area: 4/1/5/2;
+    grid-area: 3/1/3/2;
     display: flex;
     align-items: center;
+    align-self: center;
    
     /* gap: 10px; */
     width: 206px;
@@ -219,9 +229,12 @@ button{
 
 .video-tuto p{
     margin-left: 20px;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 16px;
+    font-weight: 400;
 }
 .video-tuto i{
-    width: 27%;
+    width: 20%;
     height: 48%;
     background: white;
     border-radius: 50%;
@@ -236,7 +249,8 @@ button{
 }
 .workout{
 
-    grid-area: 2/4/3/5;
+    grid-area: 1/2/3/3;
+    align-self: center;
     width: 193px;
     height: 98px;
 
@@ -246,13 +260,16 @@ button{
     backdrop-filter: blur(10px);
 }
 .workout p{
-    margin: 10% 20px;
+    margin: 6% 15px;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 
 .workout span{
     color: #FFF;
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 900;
 }
 
@@ -290,7 +307,7 @@ button{
 }
 
 .habbit-text p{
-    width: 48%;
+    width: 90%;
     color: rgba(255, 255, 255, 0.50);
     text-align: center;
     font-size: 14px;
@@ -301,6 +318,8 @@ button{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(231px, 1fr));
     gap: 40px;
+    width: 100%;
+    justify-items: center;
 }
 
 .img-con{
@@ -338,14 +357,14 @@ button{
 /* run */
 
 .run{
-    width: 65%;
+    width: 73%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 30px 32px 29px 54px;
     justify-content: flex-end;
     align-items: center;
-    gap: 165px;
-    align-self: stretch;
+    gap: 38px;
+    /* align-self: stretch; */
 
     border-radius: 18px;
     background: #222;
@@ -361,10 +380,11 @@ button{
 }
 
 .content div{
+    width: 71%;
     display: flex;
     flex-direction: column;
     /* align-items: flex-start; */
-    gap: 14px;
+    gap: 20px;
     /* align-self: stretch; */
 }
 
@@ -383,7 +403,7 @@ button{
 
 .run img{
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 18px;
 }
 
@@ -427,18 +447,19 @@ button{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* gap: 40px; */
-    justify-items: flex-start;
+    justify-items: center;
 
 
-    width: 73%;
+    width: 100%;
+    /* margin: 0 auto; */
     /* align-items: flex-start;
     align-content: center; */
-    padding-top: 49px;
+    /* padding-top: 49px; */
     gap:60px;
 }
 
 .calculator h1 {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 900;
     margin: 0 0 20px 0;
 }
@@ -487,6 +508,7 @@ th,td{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 90%;
     /* text-align: center; */
 }
 .cal h1 {
@@ -505,6 +527,7 @@ form {
     display: flex;
     flex-direction: row;
     gap: 12px;
+    margin: 0px;
     /* width: 100%; */
 }
 input,select{
@@ -514,7 +537,8 @@ input,select{
 }
 input {
     flex: 1;
-    height: 28px;
+    width: 100%;
+    /* height: 28px; */
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
@@ -523,7 +547,7 @@ input {
 
 select {
     flex: 1;
-    height: 52px;
+    /* height: 52px; */
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
@@ -531,6 +555,7 @@ select {
 }
 
 #activity {
+    margin: 0px;
     margin-bottom: 34px;
 }
 
@@ -538,16 +563,15 @@ select {
 
 .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 20px;
     width: 73%;
-    max-width: 1200px;
     margin: 20px auto;
 }
 
 
 .fea{
-    width: fit-content;
+    width: 100%;
     display: flex;
     padding: 20px;
     /* justify-content: center; */
@@ -561,7 +585,7 @@ select {
 .fea-pic{
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
+    align-items: center;
     /* text-align: center; */
     gap: 20px
 
@@ -589,7 +613,7 @@ select {
 /* team member */
 .team {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(323px, 1fr));
     gap: 20px;
     padding: 20px;
     box-sizing: border-box;
@@ -600,30 +624,31 @@ select {
 
 .team-mem {
     display: grid;
+
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(5,1fr);
-    align-items: center;
+    justify-items: start;
+    align-items: end;
 }
 .team-mem img{
     grid-area: 1/1/6/6;
 }
 
-.name{
-    grid-area: 2/1/3/4;
-    padding-left: 20px;
-}
+
 .team-mem img {
     width: 100%;
-    height: 272px;
+    height: 100%;
     border-radius: 18px;
 }
 
 .name {
+    grid-area: 2/1/3/4;
+    padding-left: 20px;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 3px;
-    margin-top: 10px;
+    gap: 5px;
+    padding-bottom: 20px;
 }
 
 .name h3 {
@@ -708,20 +733,27 @@ hr {
 
 
 
-
-/* Media Queries for smaller screens */
 @media (max-width: 768px) {
 
+    body{
+        /* width: 100%;
+        margin: 0 auto; */
+        gap:50px;
+    }
+
     main{
+        /* width: 100%; */
         gap: 50px;
+        /* margin: 0 auto; */
+        padding-bottom: 50px;
     }
     header{
-        width: 425px;
-        height: 1280px;
+        padding: 0px;
     }
 
     nav{
-        width: 87%;
+        width: 100%;
+        padding: 20px;
     }
     .nav-options {
         display: none;
@@ -729,23 +761,44 @@ hr {
 
     #hamburger {
         display: block;
-        padding-left: 190px;
+        margin: 0px;
+        /* padding-left: 190px; */
     }
 
     .banner {
         grid-template-columns: 1fr;
         gap: 40px;
-        width: 425px;
+        width: 92%;
     }
 
     .banner-left {
-        width: 92%;
-        padding-left: 20px;
+        width: 74%;
+        padding-top: 20px;
+    }
+    .banner-right{
+        width: 74%;
+    }
+    .h1-58px{
+        font-size: 50px;
+        margin: 0px;
+    }
+    .p-16px{
+        width: 75%;
+        margin: 0px;
     }
 
-    button{
+    .btn-primary{
         width: 100%;
-        font-size: 15px;
+    }
+    #join1{
+        display: none;
+    }
+    #now{
+        display: block;
+    }
+    button{
+        font-size: 16px;
+        padding: 16px 24px;
     }
     .banner-img {
         width: 100%;
@@ -753,21 +806,26 @@ hr {
     }
 
     .video-tuto{
-        grid-area: 3/1/5/2;
+        align-self: auto;
+        width: 106%;
     }
 
     .workout{
-        grid-area: 1/5/5/2;
+        width: 90%;
+    }
+    .workout p{
+        margin: 16% 13px;
+        font-size: 14px;
     }
 
-
+  
     .habbit-text h1 {
         font-size: 36px;
     }
 
     .habbit-text p {
-        font-size: 12px;
-        width: 80%;
+        font-size: 14px;
+        width: 100%;
     }
 
     .img-con h3 {
@@ -775,13 +833,14 @@ hr {
     }
 
     .img-con p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .run {
+        width: 90%;
         grid-template-columns: 1fr;
-        gap: 50px;
-        padding: 30px 32px 29px 32px;
+        gap: 30px;
+        /* padding: 30px 32px 29px 32px; */
     }
 
     .content h1 {
@@ -789,21 +848,24 @@ hr {
     }
 
     .content p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
-    #run1{
+    #brun{
+        width: 100%;
+    }
+    /* #run1{
         display: none;
     }
 
     #run2{
         display: block;
         width: 277px;
-    }
+    } */
 
 
     .bmi-title{
-        width: 70%;
+        width: 90%;
     }
     .bmi-title h1 {
         font-size: 36px;
@@ -813,14 +875,13 @@ hr {
         width: 300px;
     }
     .bmi-title p {
-        font-size: 12px;
+        font-size: 14px;
+        width: 294px;
     }
-    .bmi-cal{
-        padding: 0px;
-        padding-bottom: 40px;
-    }
+
     .calculator {
         grid-template-columns: 1fr;
+        justify-items: flex-start;
     }
     .feature-grid {
         grid-template-columns: 1fr;
@@ -843,6 +904,27 @@ hr {
 
     .team{
         width: 90%;
+        padding: 20px 0px;
+    }
+
+    .team-mem{
+        justify-items: center;
+    }
+    .team-mem img{
+        width: 90%;
     }
 }
 
+
+@media (max-width: 320px) {
+    .btn-primary{
+        flex-direction: column;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+
+    .team-mem{
+        width: 90%;
+    }
+}
