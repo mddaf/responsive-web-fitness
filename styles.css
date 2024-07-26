@@ -189,7 +189,6 @@ button{
     display: grid;
     grid-template-rows: repeat(5,1fr);
     grid-template-columns: repeat(5,1fr);
-    align-items: center;
 }
 
 
@@ -388,7 +387,9 @@ button{
     border-radius: 18px;
 }
 
-
+#run2{
+    display: none;
+}
 
 .bmi-title {
     width: 40%;
@@ -661,7 +662,7 @@ footer {
 
 .des h3 {
     color: #E6533C;
-    font-size: 36px;
+    font-size: 52px;
     font-style: italic;
     font-weight: 800;
 }
@@ -716,7 +717,7 @@ hr {
     }
     header{
         width: 425px;
-        height: auto;
+        height: 1280px;
     }
 
     nav{
@@ -756,7 +757,7 @@ hr {
     }
 
     .workout{
-
+        grid-area: 1/5/5/2;
     }
 
 
@@ -780,6 +781,7 @@ hr {
     .run {
         grid-template-columns: 1fr;
         gap: 50px;
+        padding: 30px 32px 29px 32px;
     }
 
     .content h1 {
@@ -790,9 +792,13 @@ hr {
         font-size: 12px;
     }
 
-    .run img {
-        width: 100%;
-        height: auto;
+    #run1{
+        display: none;
+    }
+
+    #run2{
+        display: block;
+        width: 277px;
     }
 
 
@@ -824,6 +830,7 @@ hr {
         /* display: flex; */
         flex-direction: column;
         text-align: center;
+        gap:0px;
     }
     .fea-pic h3 {
         font-size: 20px;
