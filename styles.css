@@ -380,7 +380,7 @@ button{
 }
 
 .content div{
-    width: 71%;
+    /* width: 71%; */
     display: flex;
     flex-direction: column;
     /* align-items: flex-start; */
@@ -397,7 +397,7 @@ button{
 .content p{
     /* align-self: stretch; */
     color: rgba(255, 255, 255, 0.50);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
 }
 
@@ -468,6 +468,7 @@ button{
     color: rgba(255, 255, 255, 0.50);
     font-size: 14px;
     font-weight: 400;
+    width: 90%;
     /* margin-bottom: 20px; */
 }
 select option{
@@ -735,7 +736,7 @@ hr {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
 
     body{
         /* width: 100%;
@@ -750,7 +751,7 @@ hr {
         padding-bottom: 50px;
     }
     header{
-        padding: 0px;
+        padding-bottom: 30px;
     }
 
     nav{
@@ -820,9 +821,11 @@ hr {
         font-size: 14px;
     }
 
-  
+    .habbit{
+        width: 85%;
+    }
     .habbit-text h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .habbit-text p {
@@ -839,16 +842,16 @@ hr {
     }
 
     .run {
-        width: 90%;
+        width: 85%;
         grid-template-columns: 1fr;
         gap: 30px;
-        /* padding: 30px 32px 29px 32px; */
+        padding: 30px 32px 29px 32px;
     }
     .content{
-        width: 123%;
+        width: 100%;
     }
     .content h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .content p {
@@ -872,7 +875,7 @@ hr {
         width: 90%;
     }
     .bmi-title h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     table,th,td{
@@ -890,6 +893,9 @@ hr {
     .feature-grid {
         grid-template-columns: 1fr;
         gap: 15px;
+    }
+    .cal{
+        width: 100%;
     }
     .fea{
         /* display: flex; */
@@ -927,8 +933,11 @@ hr {
     .banner-img img{
         width: 100%;
     }
-
+    .cal{
+        width: 93%;
+    }
     .team-mem{
         width: 90%;
     }
+
 }
