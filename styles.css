@@ -751,6 +751,7 @@ hr {
         padding-bottom: 50px;
     }
     header{
+        padding: 0px;
         padding-bottom: 30px;
     }
 
@@ -926,7 +927,7 @@ hr {
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 363px) {
     .btn-primary{
         flex-direction: column;
     }
