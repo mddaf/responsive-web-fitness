@@ -197,7 +197,7 @@ button{
 .banner-right{
     display: grid;
     grid-template-rows: repeat(3,1fr);
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
 }
 
 
@@ -373,7 +373,7 @@ button{
 
 .content{
     display: flex;
-    /* width: 443px; */
+    width: 91%;
     flex-direction: column;
     /* align-items: flex-start; */
     gap: 34px;
@@ -566,6 +566,7 @@ select {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 20px;
     width: 73%;
+    max-width: 1459px;
     margin: 20px auto;
 }
 
@@ -618,6 +619,7 @@ select {
     padding: 20px;
     box-sizing: border-box;
     width: 73%;
+    max-width: 1391px;
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.10);
 }
@@ -673,7 +675,7 @@ footer {
 .foot {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
+    gap: 76px;
     width: 73%;
     margin: 0 auto;
     padding-top: 40px;
@@ -807,11 +809,11 @@ hr {
 
     .video-tuto{
         align-self: auto;
-        width: 106%;
+        width: 100%;
     }
 
     .workout{
-        width: 90%;
+        width: 100%;
     }
     .workout p{
         margin: 16% 13px;
@@ -842,7 +844,9 @@ hr {
         gap: 30px;
         /* padding: 30px 32px 29px 32px; */
     }
-
+    .content{
+        width: 123%;
+    }
     .content h1 {
         font-size: 36px;
     }
