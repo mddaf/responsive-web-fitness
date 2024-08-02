@@ -4,24 +4,6 @@
 
 
 
-/* common style */
-
-.h1-58px{
-    font-size: 58px;
-    font-weight: 900;
-    line-height: 120%;
-    margin: 0px;
-}
-
-.p-16px{
-    color: rgba(255, 255, 255, 0.50);
-    font-size: 16px;
-    font-weight: 400;
-    padding-top: 10px;
-    line-height: 24px; 
-    letter-spacing: 0.5px;
-}
-
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -73,6 +55,16 @@ nav{
 }
 
 
+
+.title{
+    color: #E6533C;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 800;
+    margin: 0px;
+
+}
+
 .nav-options{
 
     display: flex;
@@ -84,6 +76,12 @@ nav{
     border-radius: 39px;
     border: 1px solid rgba(255, 255, 255, 0.10);
 }
+a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
 
 #hamburger {
     display: none;
@@ -91,21 +89,6 @@ nav{
     cursor: pointer;
 }
 
-.title{
-    color: #E6533C;
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 800;
-    margin: 0px;
-
-}
-
-.nav-options p{
-    font-size: 18px;
-    font-weight: 400;
-    cursor: pointer;
-    /* line-height: 120%;  */
-}
 
 .special{
     font-weight: 600;
@@ -147,6 +130,22 @@ nav{
     gap: 28px;
 }
 
+.h1-58px{
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 120%;
+    margin: 0px;
+}
+
+.p-16px{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+    line-height: 24px; 
+    letter-spacing: 0.5px;
+    width: 75%;
+}
 
 .shape{
     font-family: Miama;
@@ -275,11 +274,6 @@ button{
 
 
 
-
-
-
-
-
 /* /* change habbit */
 
 .habbit{
@@ -310,7 +304,7 @@ button{
     width: 90%;
     color: rgba(255, 255, 255, 0.50);
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -347,7 +341,7 @@ button{
 
 .img-con p{
     color: rgba(255, 255, 255, 0.50);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -397,8 +391,9 @@ button{
 .content p{
     /* align-self: stretch; */
     color: rgba(255, 255, 255, 0.50);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
+    width: 80%;
 }
 
 .run img{
@@ -429,7 +424,7 @@ button{
 
 .bmi-title p {
     color: rgba(255, 255, 255, 0.50);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     max-width: 600px;
     margin: 0px;
@@ -466,7 +461,7 @@ button{
 
 .calculator p ,td{
     color: rgba(255, 255, 255, 0.50);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     width: 90%;
     /* margin-bottom: 20px; */
@@ -673,7 +668,7 @@ footer {
     padding: 40px 0;
 }
 
-.foot {
+#foot {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 76px;
@@ -706,18 +701,15 @@ footer {
     flex-direction: column;
     gap: 20px;
 }
-
+.get a{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 16px;
+}
 .get h1 {
     font-size: 24px;
     font-weight: 700;
 }
 
-.get a {
-    color: rgba(255, 255, 255, 0.50);
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
-}
 
 hr {
     width: 80%;
@@ -787,7 +779,6 @@ hr {
         margin: 0px;
     }
     .p-16px{
-        width: 75%;
         margin: 0px;
     }
 
